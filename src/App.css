@@ -1,5 +1,7 @@
 :root {
-  --c-lit-blue: aliceblue;
-  --c-med-blue: cornflowerblue;
-  --c-drk-blue: midnightblue;
+  --lit-blue: aliceblue;
+  --med-blue: cornflowerblue;
+  --drk-blue: midnightblue;
+
+  --sans-serif: 'Open Sans', sans-serif;
 }

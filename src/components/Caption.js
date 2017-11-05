@@ -1,16 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const TitleStyle = styled.strong`
-    display: block;    
-    font-weight: bold;
+const StyledFigcaption = styled.figcaption`
+    font-size: 0.7rem;
+    line-height: 1.5;
 `;
 
-const Caption = ({title, subTitle}) => (
-    <figcaption>
-        <TitleStyle>{title}</TitleStyle>
+const StyledTitle = styled.strong`
+    display: block;    
+    font-weight: 700;
+`;
+
+const Caption = ({title, subTitle, className}) => (
+    <StyledFigcaption className={className}>
+        <StyledTitle>{title}</StyledTitle>
         {subTitle}
-    </figcaption>
+    </StyledFigcaption>
 );
 
 export default Caption;

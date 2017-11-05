@@ -25,11 +25,11 @@ class App extends Component {
     return (
       <div className="App">
         <Caption title="Title for the caption of an image or title, etc." subTitle="Subtitle for the caption"/>
-        <Header title="Header title" subTitle="Header subtitle" subTitleLevel="3"/>
-        <Heading level="2">This is a heading</Heading>
-        <Hero src="https://via.placeholder.com/566x318" alt="Hero alt text" title="Hero title" subTitle="Hero subtitle" thumbs={thumbs}/>
+        <Header title="Title of the section" subTitle="SubTitle" subTitleLevel="6"/>
+        <Heading level="2">Sub-heading</Heading>
+        <Hero src="https://via.placeholder.com/566x318" alt="Hero alt text" title="Title for the image" subTitle="Caption for the video" thumbs={thumbs}/>
         <Thumbnails thumbs={thumbs}/>
-        <Video src="http://media.w3.org/2010/05/sintel/trailer.mp4" preload="none" playsinline="true" poster="https://via.placeholder.com/246x138" title="Video title" subTitle="Video subtitle"/>
+        <Video src="http://media.w3.org/2010/05/sintel/trailer.mp4" preload="none" playsinline="true" poster="https://via.placeholder.com/246x138" title="Video title" subTitle="Video caption for some stuff"/>
         <VideoTeaser src="http://media.w3.org/2010/05/sintel/trailer.mp4" preload="none" playsinline="true" poster="https://via.placeholder.com/125x70" title="Teaser title" subTitle="Teaser subtitle" desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, tenetur quaerat saepe esse mollitia dolorum incidunt sit inventore?"/>
       </div>
     );

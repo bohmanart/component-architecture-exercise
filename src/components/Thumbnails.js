@@ -1,9 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Thumbnails = ({thumbs}) => (
-    <nav>
-        {thumbs.map(thumb => <button><img src={thumb.src} alt={thumb.alt}/></button>)}
+const StyledButton = styled.button`
+    border: 1px solid var(--drk-blue);
+    padding: 0;
+    border-radius: 0;
+
+    & + & {
+        margin-left: 0.5rem;
+    }
+`;
+
+const Thumbnails = ({thumbs, className}) => (
+    <nav className={className}>
+        {thumbs.map(thumb => <StyledButton><img src={thumb.src} alt={thumb.alt}/></StyledButton>)}
     </nav>
 );
 
