@@ -4,7 +4,7 @@ import styled, {css} from 'styled-components';
 const nomargin = props => props.nomargin && css`margin: 0;`;
 
 const H1 = styled.h1`
-    color: var(--med-blue);
+    color: var(--drk-blue);
     font-size: 1.5rem;
     font-weight: 300;
     ${nomargin}
@@ -30,13 +30,14 @@ const H4 = styled.h4`
 `;
 
 const H5 = styled.h5`
+    color: var(--med-blue);    
     font-size: 0.9rem;
     font-weight: 300;
     ${nomargin}
 `;
 
 const H6 = styled.h6`
-    color: var(--drk-blue);
+    color: var(--med-blue);
     font-size: 0.7rem;
     font-weight: 300;
     ${nomargin}

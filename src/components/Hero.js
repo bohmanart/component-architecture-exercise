@@ -30,8 +30,8 @@ const StyledThumbnails = styled(Thumbnails)`
     justify-self: end;
 `;
 
-const Hero = ({src, alt, title, subTitle, thumbs}) => (
-    <StyledFigure>
+const Hero = ({src, alt, title, subTitle, thumbs, className}) => (
+    <StyledFigure className={className}>
         <StyledImg src={src} alt={alt}/>
         <StyledCaption title={title} subTitle={subTitle}/>
         {thumbs && <StyledThumbnails thumbs={thumbs}/>}

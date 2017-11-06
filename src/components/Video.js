@@ -9,6 +9,7 @@ const StyledFigure = styled.figure`
 const StyledVideo = styled.video`
     width: 100%;    
     border: 1px solid var(--drk-blue);
+    background: var(--gradient);
 `;
 
 const StyledCaption = styled(Caption)`

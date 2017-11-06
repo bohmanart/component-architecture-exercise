@@ -3,5 +3,7 @@
   --med-blue: cornflowerblue;
   --drk-blue: midnightblue;
 
+  --gradient: linear-gradient(135deg, var(--lit-blue) 12%, var(--med-blue) 70%, var(--drk-blue) 100%);
+
   --sans-serif: 'Open Sans', sans-serif;
 }
