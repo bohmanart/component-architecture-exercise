@@ -6,7 +6,7 @@ const StyledAside = styled.aside`
 	    @supports (display: grid) {
             float: right;
             width: 245px;
-            margin: 0 -9rem 1rem 1rem;
+            margin: 0 -9.7rem 1rem 1rem;
         }
     }
 `;

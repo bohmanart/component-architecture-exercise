@@ -13,7 +13,7 @@ const StyledButton = styled.button`
 
 const Thumbnails = ({thumbs, className}) => (
     <nav className={className}>
-        {thumbs.map(thumb => <StyledButton><img src={thumb.src} alt={thumb.alt}/></StyledButton>)}
+        {thumbs.map((thumb, index) => <StyledButton key={index}><img src={thumb.src} alt={thumb.alt}/></StyledButton>)}
     </nav>
 );
 

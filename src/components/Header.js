@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Heading from './Heading';
 
 const Header = ({title, subTitle, subTitleLevel='6', className}) => (

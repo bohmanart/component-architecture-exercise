@@ -43,31 +43,25 @@ const H6 = styled.h6`
     ${nomargin}
 `;
 
-const Heading = ({level, nomargin, children}) => {
+const Heading = ({level=1, nomargin, children}) => { // eslint-disable-next-line
     switch (level) {
         case '1':
-            return (<H1 nomargin={nomargin}>{children}</H1>)
-            break;
+            return <H1 nomargin={nomargin}>{children}</H1>
 
         case '2':
-            return (<H2 nomargin={nomargin}>{children}</H2>)
-            break;
+            return <H2 nomargin={nomargin}>{children}</H2>
 
         case '3':
-            return (<H3 nomargin={nomargin}>{children}</H3>)
-            break;
+            return <H3 nomargin={nomargin}>{children}</H3>
 
         case '4':
-            return (<H4 nomargin={nomargin}>{children}</H4>)
-            break;
+            return <H4 nomargin={nomargin}>{children}</H4>
 
         case '5':
-            return (<H5 nomargin={nomargin}>{children}</H5>)
-            break;
+            return <H5 nomargin={nomargin}>{children}</H5>
 
         case '6':
-            return (<H6 nomargin={nomargin}>{children}</H6>)
-            break;
+            return <H6 nomargin={nomargin}>{children}</H6>
     }
 }
 
