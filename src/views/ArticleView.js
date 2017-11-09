@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -6,6 +7,7 @@ import VideoTeaser from '../components/VideoTeaser';
 
 const StyledArticle = styled.article`
     padding: 1rem;
+
     @supports not (display: grid) {
         max-width: 50rem;
         margin: 0 auto;
@@ -78,5 +80,19 @@ const ArticleView = ({
         </StyledFooter>
     </StyledArticle>
 );
+
+ArticleView.propTypes = {
+    headerTitle: PropTypes.string,
+    headerSubTitle: PropTypes.string,
+    heroSrc: PropTypes.string,
+    heroAlt: PropTypes.string,
+    heroTitle: PropTypes.string,
+    heroSubTitle: PropTypes.string,
+    heroThumbs: PropTypes.array,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.element),
+        PropTypes.element
+    ])
+};
 
 export default ArticleView;
